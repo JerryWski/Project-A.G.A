@@ -1,0 +1,39 @@
+header {
+  background-image: url('../img/face.jpg');
+  background-position: center 100px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  height: 200vh;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(13, 44%, 83%, 0.7);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(6px);
+
+  &__logo {
+    width: 100px;
+    margin-left: 40px;
+  }
+
+  &__list {
+    list-style: none;
+    margin-right: 50px;
+
+    &-item {
+      display: inline-block;
+    }
+
+    &-item a {
+      margin-left: 70px;
+      color: var(--black);
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
