@@ -1,10 +1,11 @@
 header {
   background-image: url("../img/face.jpg");
   background-position: center 100px;
-  object-fit: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 200vh;
 }
+
 .navbar {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -18,14 +19,22 @@ header {
   top: 0;
   backdrop-filter: blur(6px);
 
-  &__logo {
+  &__container {
     width: 100px;
-    margin-left: 40px;
+    min-width: 50px;
+    margin-left: 20px;
+
+    &-logo {
+      max-width: 100%;
+    }
   }
 
   &__list {
+    padding-left: 40px;
     list-style: none;
     margin-right: 50px;
+    // display: flex;
+    // justify-content: space-around;
 
     &-item {
       display: inline-block;
@@ -36,6 +45,7 @@ header {
       color: var(--black);
       font-size: 1.1rem;
       letter-spacing: 1px;
+      padding: 5px;
     }
   }
 }

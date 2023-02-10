@@ -13,4 +13,8 @@ html {
 
 a {
   text-decoration: none;
+  outline: none;
+}
+a:focus {
+  color: var(--white);
 }
