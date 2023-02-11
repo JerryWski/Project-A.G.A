@@ -24,16 +24,21 @@
   </head>
 
   <body>
-    <header>
+    <header id="home">
       <nav class="navbar">
-        <div class="navbar__image"><img class="navbar__image-logo" src="./src/img/logo-one.png" alt="logo" /></div>
+        <div class="navbar__image"><a href="#home"><img class="navbar__image-logo" src="./src/img/logo-one.png" alt="logo" /></a></div>
         <ul class="navbar__list">
-          <li class="navbar__list-item"><a href="#">O Nas</a></li>
-          <li class="navbar__list-item"><a href="#">Nasz Zespół</a></li>
-          <li class="navbar__list-item"><a href="#">Usługi</a></li>
-          <li class="navbar__list-item"><a href="#">Cennik</a></li>
-          <li class="navbar__list-item"><a href="#">Kontakt</a></li>
+          <li class="navbar__list-item"><a class="links" href="#">O Nas</a></li>
+          <li class="navbar__list-item"><a class="links"href="#">Nasz Zespół</a></li>
+          <li class="navbar__list-item"><a class="links" href="#">Usługi</a></li>
+          <li class="navbar__list-item"><a class="links" href="#">Cennik</a></li>
+          <li class="navbar__list-item"><a class="links" href="#">Kontakt</a></li>
         </ul>
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>  
       </nav>
     </header>
 

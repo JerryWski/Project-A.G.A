@@ -16,5 +16,12 @@ a {
   outline: none;
 }
 a:focus {
-  color: var(--white);
+  color: var(--focus-color);
+}
+body {
+  font-family: var(--font);
+  overflow-x: hidden;
+}
+.sticky-body {
+  overflow: hidden;
 }

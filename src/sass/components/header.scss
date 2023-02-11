@@ -19,6 +19,7 @@ header {
   position: fixed;
   top: 0;
   backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(196, 177, 177, 0.616);
 
   &__image {
     width: 87px;
@@ -52,7 +53,28 @@ header {
 }
 
 @media (max-width: 900px) {
-    .navbar__list {
-        display: none;
+  .navbar__list {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 88px;
+    height: 60vh;
+    top: 87px;
+    background-color: var(--white); //#d6cdcd
+    margin-right: 0;
+    border: 2px solid var(--lightrose);
+    padding: 10px;
+    transform: translateY(-150%);
+    transition: .6s all ease-out;
+
+    &-item a {
+      margin-left: 0;
     }
-} 
+  }
+}
+.active {
+  transform: translateY(0%);
+}
