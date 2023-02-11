@@ -62,19 +62,33 @@ header {
     align-items: center;
     top: 88px;
     height: 60vh;
-    top: 87px;
     background-color: var(--white); //#d6cdcd
     margin-right: 0;
     border: 2px solid var(--lightrose);
     padding: 10px;
     transform: translateY(-150%);
-    transition: .6s all ease-out;
+    transition: .6s cubic-bezier(0.65,0.05,0.36,1);
 
-    &-item a {
+    &-item .links{
+      display: block;
+      position: relative;
       margin-left: 0;
     }
   }
 }
-.active {
+.active{
   transform: translateY(0%);
+  
+}
+.links--animation {
+  animation: linksAnimation 1s;
+}
+
+@keyframes linksAnimation {
+  from {
+    transform: translateY(-250%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
