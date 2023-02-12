@@ -15,7 +15,7 @@ a {
   text-decoration: none;
   outline: none;
 }
-a:focus {
+.links:focus {
   color: var(--focus-color);
 }
 body {
