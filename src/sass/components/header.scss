@@ -8,7 +8,7 @@ header {
 }
 
 .navbar {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font);
   font-weight: 300;
   width: 100%;
   height: fit-content;
@@ -20,6 +20,7 @@ header {
   padding: 7px 0px 7px 0px;
   position: fixed;
   top: 0;
+  z-index: 1000;
   backdrop-filter: blur(6px);
   // box-shadow: 0 10px 30px rgba(196, 177, 177, 0.616); ver2
 
@@ -83,20 +84,49 @@ header {
 .wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  margin: 10px;
+  
 
   &__header {
+    font-family: 'Elsie', cursive;
+    font-weight: 900;
+    text-align: left;
+    font-size: 4.3rem;
+    letter-spacing: 3px;
+    color: hsl(0, 1%, 48%);
     margin-top: 30px;
     text-transform: uppercase;
+
+    &-beauty {
+      color: var(--lightrose);
+      
+    }
   }
   &__subheader {
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 36px;
+    font-size: 1.2rem;
+    // width: 100%;
+    transform: skew(14deg, -15deg);
+    left: 180px;
+    top: 130px;
+    // transform: translate(-50%, -50%);
+    color: var(--underline-rose);
   }
 
   &__text {
-    margin-top: 10px;
+    font-family: var(--secondfont);
     font-size: 0.9rem;
+    text-align: left;
     color: var(--black);
+    font-weight: 400;
+    padding-top: 40px;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
   }
 
   &__image {
@@ -107,6 +137,8 @@ header {
 }
 .wrapper.one {
   order: 1;
+  position: relative;
+  max-width: 536px;
 }
 
 @media (max-width: 900px) {
