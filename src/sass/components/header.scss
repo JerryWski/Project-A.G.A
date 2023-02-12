@@ -86,47 +86,45 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  
 
   &__header {
-    font-family: 'Elsie', cursive;
+    font-family: "Elsie", cursive;
     font-weight: 900;
-    text-align: left;
+    text-align: center;
     font-size: 4.3rem;
     letter-spacing: 3px;
-    color: hsl(0, 1%, 48%);
-    margin-top: 30px;
+    color: var(--lightgrey);
+    margin-top: 70px;
     text-transform: uppercase;
 
     &-beauty {
       color: var(--lightrose);
-      
     }
   }
   &__subheader {
     position: absolute;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     font-weight: 300;
     letter-spacing: -1px;
     line-height: 36px;
-    font-size: 1.2rem;
-    // width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
     transform: skew(14deg, -15deg);
-    left: 180px;
-    top: 130px;
-    // transform: translate(-50%, -50%);
+    // left: 200px;
+    top: 200px;
     color: var(--underline-rose);
   }
 
   &__text {
     font-family: var(--secondfont);
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: left;
     color: var(--black);
     font-weight: 400;
-    padding-top: 40px;
+    padding-top: 32px;
     line-height: 1.5rem;
     letter-spacing: 2px;
+    position: relative;
   }
 
   &__image {
@@ -134,6 +132,42 @@ header {
     border-radius: 5px;
     border: 1px solid var(--lightrose);
   }
+
+  &__button {
+    font-family: var(--font);
+    margin-top: 30px;
+    font-size: 0.8rem;
+    width: 47%;
+    padding: 14px 22px;
+    border: 1px solid var(--underline-rose);
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--underline-rose);
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    background: var(--white);
+  }
+  
+  &__button:hover {
+    background: var(--lightgrey);
+    border: none;
+    color: var(--white);
+  }
+}
+.wrapper .button-link {
+  display: flex;
+  width: 100%;
+}
+.test {
+  margin-top: 30px;
+  background-image: url('../img/arrow2.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(18deg);
+  width: 40%;
+  height: 50px;
+  
 }
 .wrapper.one {
   order: 1;
@@ -190,6 +224,35 @@ header {
   }
   .wrapper.one {
     order: 0;
+  }
+  .wrapper__header {
+    font-size: 5rem;
+    margin-top: 0;
+    text-align: left;
+  }
+  .wrapper__subheader {
+    top: 130px;
+    left: 180px;
+    font-size: 1.9rem;
+  }
+  .wrapper__text {
+    font-size: 0.7rem;
+  }
+  .wrapper__text::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    background-image: url(../img/arrow1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(30deg);
+    top: 133px;
+    right: 100px;
+
+  }
+  .test {
+    display: none;
   }
 }
 
