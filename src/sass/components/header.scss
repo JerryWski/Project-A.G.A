@@ -4,7 +4,7 @@ header {
   // background-size: contain;
   // background-repeat: no-repeat;
   background-color: var(--bg-rose);
-  height: 100vh;
+  // height: 100vh;
 }
 
 .navbar {
@@ -117,11 +117,11 @@ header {
 
   &__text {
     font-family: var(--secondfont);
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: left;
     color: var(--black);
     font-weight: 400;
-    padding-top: 32px;
+    padding-top: 52px;
     line-height: 1.5rem;
     letter-spacing: 2px;
     position: relative;
@@ -145,13 +145,13 @@ header {
     cursor: pointer;
     color: var(--underline-rose);
     border-radius: 20px;
-    transition: 0.3s all ease;
+    transition: 0.3s background ease;
     background: transparent;
   }
   
   &__button:hover {
     background: var(--lightgrey);
-    border: none;
+    border: 1px solid var(--lightgrey);
     color: var(--white);
   }
 }
@@ -236,6 +236,7 @@ header {
     font-size: 1.9rem;
   }
   .wrapper__text {
+    padding-top: 42px;
     font-size: 0.7rem;
   }
   .wrapper__text::after {
