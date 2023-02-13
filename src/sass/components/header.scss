@@ -3,8 +3,8 @@ header {
   // background-position: center 85px;
   // background-size: contain;
   // background-repeat: no-repeat;
-  background-color: var(--white);
-  height: 200vh;
+  background-color: var(--bg-rose);
+  height: 100vh;
 }
 
 .navbar {
@@ -16,7 +16,7 @@ header {
   align-items: center;
   // justify-content: space-between; ver2
   justify-content: center;
-  background-color: hsl(0, 0%, 100%, 0.8);
+  background-color: hsl(274, 47%, 97%, 0.8);
   padding: 7px 0px 7px 0px;
   position: fixed;
   top: 0;
@@ -146,7 +146,7 @@ header {
     color: var(--underline-rose);
     border-radius: 20px;
     transition: 0.3s all ease;
-    background: var(--white);
+    background: transparent;
   }
   
   &__button:hover {
@@ -159,7 +159,7 @@ header {
   display: flex;
   width: 100%;
 }
-.test {
+.offer-arrow {
   margin-top: 30px;
   background-image: url('../img/arrow2.svg');
   background-repeat: no-repeat;
@@ -247,11 +247,11 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     transform: rotate(30deg);
-    top: 133px;
+    top: 130px;
     right: 100px;
 
   }
-  .test {
+  .offer-arrow {
     display: none;
   }
 }
