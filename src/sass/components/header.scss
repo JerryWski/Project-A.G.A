@@ -14,7 +14,7 @@ header {
   height: fit-content;
   display: flex;
   align-items: center;
-  // justify-content: space-between; ver2
+
   justify-content: center;
   background-color: hsl(274, 47%, 97%, 0.8);
   padding: 7px 0px 7px 0px;
@@ -22,7 +22,6 @@ header {
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(6px);
-  // box-shadow: 0 10px 30px rgba(196, 177, 177, 0.616); ver2
 
   &__image {
     width: 87px;
@@ -30,7 +29,6 @@ header {
     margin-top: 10px;
     margin-left: 40px;
     margin-right: auto;
-    // margin-left: 20px; ver2
 
     &-logo {
       max-width: 100%;
@@ -38,10 +36,8 @@ header {
   }
 
   &__list {
-    // padding-left: 40px; ver2
     list-style: none;
     margin-right: auto;
-    // margin-right: 50px; ver2
 
     &-item {
       display: inline-block;
@@ -110,14 +106,13 @@ header {
     font-size: 1.4rem;
     text-align: center;
     transform: skew(14deg, -15deg);
-    // left: 200px;
     top: 200px;
     color: var(--lightpink);
   }
 
   &__text {
     font-family: var(--secondfont);
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-align: left;
     color: var(--black);
     font-weight: 400;
@@ -129,7 +124,7 @@ header {
 
   &__image {
     width: 100%;
-    border-radius: 5px;
+    // border-radius: 5px;
     border: 1px solid var(--lightrose);
   }
 
@@ -148,7 +143,7 @@ header {
     transition: 0.3s background ease;
     background: transparent;
   }
-  
+
   &__button:hover {
     background: var(--lightgrey);
     border: 1px solid var(--lightgrey);
@@ -161,13 +156,12 @@ header {
 }
 .offer-arrow {
   margin-top: 30px;
-  background-image: url('../img/arrow2.svg');
+  background-image: url("../img/arrow2.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: translate(18deg);
   width: 40%;
   height: 50px;
-  
 }
 .wrapper.one {
   order: 1;
@@ -240,7 +234,7 @@ header {
     font-size: 0.7rem;
   }
   .wrapper__text::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 40%;
     height: 50%;
@@ -250,7 +244,6 @@ header {
     transform: rotate(30deg);
     top: 130px;
     right: 100px;
-
   }
   .offer-arrow {
     display: none;
