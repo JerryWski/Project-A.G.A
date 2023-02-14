@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .about__welcome {
   font-family: "Dancing Script", cursive;
@@ -41,7 +41,7 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   &__image-wrapper {
@@ -70,16 +70,15 @@
     line-height: 1.5rem;
   }
   &__link {
-    
+    justify-content: center;
     display: flex;
     width: 100%;
     font-family: var(--font);
     margin-top: 30px;
     font-size: 0.8rem;
-    width: 47%;
+    max-width: 200px;
     padding: 14px 22px;
     border: 1px solid var(--underline-rose);
-    background: none;
     outline: none;
     cursor: pointer;
     color: var(--underline-rose);
@@ -97,7 +96,31 @@
 
 
 @media (min-width: 900px) {
+  .about__welcome {
+    width: 50%;
+    align-self: flex-end;
+  }
   .about-container {
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__text-wrapper {
+      width: 50%;
+    }
+    &__text {
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      
+    }
+    &__image-wrapper {
+      margin-top: 0;
+      order: 0;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  
   }
 }
