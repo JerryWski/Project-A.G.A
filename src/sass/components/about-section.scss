@@ -8,7 +8,7 @@
 }
 .about__welcome {
   font-family: "Dancing Script", cursive;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@
   &-text {
     color: var(--lightrose);
     font-size: 1.6rem;
-    padding: 0px 10px 10px 10px;
+    padding: 0px 10px 0px 10px;
     text-align: center;
   }
 
@@ -72,9 +72,11 @@
   }
   &__header {
     margin-bottom: 30px;
-    font-family: var(--font);
-    color: var(--black);
-    font-size: 2.1rem;
+    font-family: 'Noto Serif Display', serif;
+    color: var(--lightgrey);
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-size: 1.9rem;
     margin-top: 20px;
   }
   &__link {
@@ -99,6 +101,9 @@
     border: 1px solid var(--lightgrey);
     color: var(--white);
   }
+  &__bg-img {
+    display: none;
+  }
 }
 
 @media (min-width: 900px) {
@@ -111,9 +116,11 @@
     }
   }
   .about-container {
+    position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    // overflow: hidden;
 
     &__text-wrapper {
       margin-top: 0;
@@ -122,9 +129,7 @@
       padding-right: 90px;
     }
     &__header {
-      font-size: 3rem;
-      padding-bottom: 30px;
-      font-family: var(--font);
+      font-size: 2.5rem;
     }
     &__text {
       font-size: 1rem;
@@ -132,12 +137,23 @@
     &__image-wrapper {
       margin-top: 0;
       order: 0;
-      width: 40%;
+      min-width: 40%;
       display: flex;
       justify-content: center;
     }
-    &__image{
-      width: 65%;
+    &__image {
+      min-width: 70%;
+      border-radius: 5px 50px;
+    }
+    &__bg-img {
+      display: block;
+      position: absolute;
+      bottom: -110px;
+      right: -40px;
+      width: 500px;
+      transform: rotate(-15deg);
+      z-index: -100;
+      opacity: 0.1;
     }
   }
 }
