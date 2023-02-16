@@ -1,16 +1,30 @@
 .offer-section {
+  position: relative;
   background-color: var(--lightgrey);
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .offer-header {
   margin-top: 40px;
-  padding: 20px 0 60px 0px;
+  margin-bottom: 40px;
+  width: 300px;
+  padding: 20px 0 0px 0px;
   font-family: "Noto Serif Display", serif;
   color: var(--white);
   text-align: center;
   letter-spacing: 0.5px;
   font-weight: 700;
   font-size: 1.9rem;
+}
+
+.offer-underline {
+  display: flex;
+  height: 1px;
+  width: 30%;
+  background-color: var(--white);
+  margin-bottom: 50px;
 }
 .offer-container {
   width: 100%;
@@ -19,12 +33,12 @@
   justify-content: center;
   align-items: center;
   gap: 80px;
-  padding: 15px;
 }
 
 .offer {
   background-color: var(--lightgrey);
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,12 +47,42 @@
   color: var(--white);
   height: 350px;
   max-width: 400px;
+  padding: 20px;
 
   &__title {
     text-align: center;
   }
-  &__image {
+  &__description {
+    text-align: center;
   }
+  &__link {
+    color: inherit;
+    border: 1px solid var(--white);
+    padding: 6px 20px 6px 10px;
+    border-radius: 20px;
+
+    &-svg {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: var(--white);
+      stroke-width: 1;
+      transform: translateX(-5px);
+      transition: all 0.4s ease;
+    }
+
+    &-text {
+      text-transform: uppercase;
+      position: relative;
+      font-weight: 500;
+      font-size: 1.4rem;
+      padding-right: 10px;
+    }
+  }
+  &__link:hover svg {
+    transform: translateX(5px);
+  }
+
   //   &__photo {
   //     object-fit: cover;
   //     height: 100%;
