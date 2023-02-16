@@ -8,13 +8,12 @@ header {
 }
 
 .navbar {
-  font-family: var(--font);
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
   width: 100%;
   height: fit-content;
   display: flex;
   align-items: center;
-
   justify-content: center;
   background-color: hsl(274, 47%, 97%, 0.8);
   padding: 7px 0px 7px 0px;
@@ -111,7 +110,7 @@ header {
   }
 
   &__text {
-    font-family: var(--font);
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 0.9rem;
     text-align: left;
     color: var(--black);
@@ -129,7 +128,7 @@ header {
   }
 
   &__button {
-    font-family: var(--font);
+    font-family: var(--secondfont);
     margin-top: 30px;
     font-size: 0.8rem;
     width: 47%;
@@ -191,7 +190,7 @@ header {
     align-items: center;
     top: 88px;
     height: 60vh;
-    background-color: var(--white); //#d6cdcd
+    background-color: var(--bg-rose); //#d6cdcd
     margin-right: 0;
     border: 1px solid var(--lightrose);
     padding: 10px;

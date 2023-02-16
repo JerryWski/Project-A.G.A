@@ -62,7 +62,7 @@
     padding: 0px 5px 0px 5px;
   }
   &__text {
-    font-family: var(--font);
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 0.8rem;
     text-align: left;
     font-weight: 400;
@@ -72,7 +72,7 @@
   }
   &__header {
     margin-bottom: 30px;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
     color: var(--lightgrey);
     letter-spacing: 0.5px;
     font-weight: 700;
@@ -83,7 +83,7 @@
     justify-content: center;
     display: flex;
     width: 100%;
-    font-family: var(--font);
+    font-family: var(--secondfont);
     margin-top: 30px;
     font-size: 0.8rem;
     max-width: 200px;
@@ -104,6 +104,10 @@
   &__bg-img {
     display: none;
   }
+  &__bg-title,
+  &__bg-subtitle {
+    display: none;
+  }
 }
 
 @media (min-width: 900px) {
@@ -116,11 +120,33 @@
     }
   }
   .about-container {
+    margin-top: 40px;
     position: relative;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     // overflow: hidden;
+
+    &__bg-title,
+    &__bg-subtitle {
+      display: block;
+      width: 100%;
+      height: fit-content;
+      position: absolute;
+      font-size: 24rem;
+      top: -20%;
+      left: 30%;
+      color: var(--lightgrey);
+      font-family: "Dancing Script", cursive;
+      letter-spacing: 18px;
+      opacity: 0.1;
+      z-index: -10;
+    }
+    &__bg-subtitle {
+      top: 40%;
+      left: 50%;
+      color: var(--underline-rose);
+    }
 
     &__text-wrapper {
       margin-top: 0;
@@ -150,10 +176,23 @@
       position: absolute;
       bottom: -110px;
       right: -40px;
-      width: 500px;
+      width: 400px;
       transform: rotate(-15deg);
       z-index: -100;
-      opacity: 0.1;
+      opacity: 0.2;
+    }
+  }
+}
+
+@media (min-width: 2500px) {
+  .about-container {
+    background-image: url("../img/bg-headers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 200px center;
+    &__bg-title,
+    &__bg-subtitle {
+      display: none;
     }
   }
 }
