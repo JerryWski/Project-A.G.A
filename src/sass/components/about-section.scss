@@ -62,7 +62,7 @@
     padding: 0px 5px 0px 5px;
   }
   &__text {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 0.8rem;
     text-align: left;
     font-weight: 400;
@@ -170,16 +170,6 @@
     &__image {
       min-width: 70%;
       border-radius: 5px 50px;
-    }
-    &__bg-img {
-      display: block;
-      position: absolute;
-      bottom: -110px;
-      right: -40px;
-      width: 400px;
-      transform: rotate(-15deg);
-      z-index: -100;
-      opacity: 0.2;
     }
   }
 }
