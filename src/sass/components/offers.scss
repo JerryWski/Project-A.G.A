@@ -92,6 +92,13 @@
   background-color: var(--lightrose);
   color: var(--black);
 }
+.offer.two .offer__link {
+  border: 1px solid var(--black);
+
+  &-svg {
+    stroke: var(--black);
+  }
+}
 // .offer:last-child {
 //     width: auto;
 // }
