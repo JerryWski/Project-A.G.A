@@ -1,26 +1,26 @@
 .offer-section {
-  overflow: hidden;
   position: relative;
   background-color: var(--lightrose);
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
-  &__bg-title {
-    display: block;
-    width: 100%;
-    height: -moz-fit-content;
-    height: fit-content;
-    position: absolute;
-    font-size: 24rem;
-    top: -49%;
-    left: 50%;
-    color: var(--white);
-    font-family: Dancing Script, cursive;
-    letter-spacing: 18px;
-    opacity: 0.2;
-  }
+  // &__bg-title {
+  //   display: block;
+  //   width: 100%;
+  //   height: -moz-fit-content;
+  //   height: fit-content;
+  //   position: absolute;
+  //   font-size: 24rem;
+  //   top: -54%;
+  //   left: 50%;
+  //   color: var(--white);
+  //   font-family: Dancing Script, cursive;
+  //   letter-spacing: 18px;
+  //   opacity: 0.1;
+  // }
 }
 .offer-header {
   margin-top: 40px;
