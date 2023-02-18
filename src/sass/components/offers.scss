@@ -1,6 +1,6 @@
 .offer-section {
   position: relative;
-  background-color: var(--lightrose);
+  background-color: var(--bg-rose);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@
   display: flex;
   height: 1px;
   width: 30%;
-  background-color: var(--white);
+  background-color: var(--black);
   margin-bottom: 50px;
 }
 .offer-container {
@@ -52,7 +52,7 @@
 
 .offer {
   background-color: var(--lightrose);
-  border: 1px solid white;
+  // border: 1px solid white;
   border-radius: 5px;
   display: flex;
   justify-content: space-around;
@@ -72,7 +72,7 @@
   }
   &__link {
     color: inherit;
-    border: 1px solid var(--white);
+    border: 1px solid var(--black);
     padding: 8px 20px 8px 15px;
     border-radius: 20px;
 
@@ -81,7 +81,7 @@
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke: var(--white);
+      stroke: var(--black);
       stroke-width: 1;
       transform: translateX(-5px);
       transition: all 0.4s ease;
