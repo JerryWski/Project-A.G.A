@@ -7,7 +7,7 @@ const toggleHamburger = () => {
   hamburgerBtn.classList.toggle("is-active");
   navList.classList.toggle("active");
   document.body.classList.toggle("sticky-body");
-  handleNavLinksAnimate()
+  handleNavLinksAnimate();
 };
 
 const removeSticky = () => {

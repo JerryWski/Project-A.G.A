@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Elsie:wght@400;900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Open+Sans:ital,wght@0,300;1,300;1,400;1,500;1,700&family=Poppins:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./dist/css/style.css" />
     <link rel="shortcut icon" href="#" />
     <!--to po to aby nie było błędu w konsoli-->
@@ -41,7 +45,7 @@
             <a class="links" href="#team">Zespół</a>
           </li>
           <li class="navbar__list-item">
-            <a class="links" href="#pricelist">Cennik</a>
+            <a class="links" href="#gallery">Galeria</a>
           </li>
           <li class="navbar__list-item">
             <a class="links" href="#contact">Kontakt</a>
@@ -231,6 +235,25 @@
           </div>
         </div>
       </section>
+
+      <!-- <section id="team" class="team-section"></section> -->
+
+      <section id="gallery" class="gallery-section">
+        <h2 class="gallery-header">Każdy zabieg, to nowa histora</h2>
+        <div class="gallery-container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide--one"></div>
+              <div class="swiper-slide swiper-slide--two"></div>
+              <div class="swiper-slide swiper-slide--three"></div>
+              <div class="swiper-slide swiper-slide--four"></div>
+              <div class="swiper-slide swiper-slide--five"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script
@@ -238,5 +261,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./dist/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./dist/js/swiper.js"></script>
   </body>
 </html>
