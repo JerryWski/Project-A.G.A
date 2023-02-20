@@ -6,20 +6,6 @@
   flex-direction: column;
   align-items: center;
 
-  // &__bg-title {
-  //   display: block;
-  //   width: 100%;
-  //   height: -moz-fit-content;
-  //   height: fit-content;
-  //   position: absolute;
-  //   font-size: 24rem;
-  //   top: -54%;
-  //   left: 50%;
-  //   color: var(--white);
-  //   font-family: Dancing Script, cursive;
-  //   letter-spacing: 18px;
-  //   opacity: 0.1;
-  // }
 }
 .offer-header {
   margin-top: 40px;
@@ -30,15 +16,15 @@
   text-align: center;
   letter-spacing: 0.5px;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
 }
 
 .offer-underline {
   display: flex;
   height: 1px;
-  width: 30%;
+  width: 60%;
   background-color: var(--black);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .offer-container {
   width: 100%;
@@ -141,7 +127,7 @@
   padding: 0;
   margin-top: 0;
   order: -1;
-  background-image: url("../img/bg-logo-beauty-rose.png");
+  background-image: url("../img/bg-logo-beauty-grey.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -166,13 +152,14 @@
     flex-direction: row;
     gap: 0;
   }
-  .offer.four {
-    order: 0;
-  }
+  
   .offer-header {
     width: 100%;
     font-size: 2.5rem;
     margin-top: 75px;
     text-align: center;
+  }
+  .offer-underline {
+    margin-bottom: 80px;
   }
 }

@@ -123,8 +123,7 @@ header {
 
   &__image {
     width: 100%;
-    border-radius: 5px;
-    border: 1px solid var(--lightrose);
+    border-radius: 15px 50px 30px
   }
 
   &__button {
@@ -232,21 +231,7 @@ header {
     padding-top: 14px;
     font-size: 0.7rem;
   }
-  // .wrapper__text::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 40%;
-  //   height: 50%;
-  //   background-image: url(../img/arrow1.svg);
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   transform: rotate(30deg);
-  //   top: 130px;
-  //   right: 100px;
-  // }
-  .offer-arrow {
-    display: none;
-  }
+
 }
 
 @keyframes linksAnimation {
