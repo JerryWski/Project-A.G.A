@@ -7,8 +7,8 @@
   align-items: center;
   background-image: url("../img/bg-logo-beauty-grey.png");
   background-repeat: no-repeat;
-  background-position: 10px 110px;
-  background-size: fill;
+  background-position: center 177px;
+  background-size: contain;
 
 }
 .offer-header {
@@ -37,6 +37,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 50px;
   gap: 50px;
 }
 
@@ -132,10 +133,6 @@
   margin-top: 0;
   order: -1;
   // background-image: url("../img/bg-logo-beauty-grey.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
   .four__text-small {
     font-style: italic;
     font-size: 1.3rem;
@@ -148,11 +145,13 @@
 
 
 @media (min-width: 900px) {
+  .offer-section {
+    background-image: none;
+  }
   .offer-container {
     flex-direction: row;
     gap: 0;
   }
-  
   .offer-header {
     width: 100%;
     font-size: 2.5rem;

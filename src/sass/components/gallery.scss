@@ -1,14 +1,20 @@
-@use '../utils' as *;
+@use "../utils" as *;
 
+.gallery-section {
+    
+}
 
 .gallery-container {
   margin-bottom: 50px;
 }
 
 .gallery-header {
-  font-family: "Monument extended", "Krona One", sans-serif;
+  font-family: "Noto Serif Display", serif;
+  color: var(--lightgrey);
   text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 2.1rem;
   margin: 100px 0 100px 0;
-  color: var(--black);
+  color: var(--lightgrey);
 }
-

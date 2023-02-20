@@ -1,6 +1,6 @@
 const swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
   coverflowEffect: {
@@ -8,7 +8,7 @@ const swiper = new Swiper(".mySwiper", {
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: false,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -39,7 +39,7 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 40,
     },
     1250: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 40,
     }
   },
