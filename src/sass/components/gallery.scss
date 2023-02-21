@@ -1,18 +1,66 @@
 @use "../utils" as *;
 
-.showroom {
-  background: rgb(243, 237, 237);
-  &__header {
+.gallery-section {
+  padding-top: 50px;
+  position: relative;
+  &-bg {
+    display: none;
+  }
+}
+
+.gallery__welcome {
+  padding: 20px;
+  &-header {
     font-family: "Noto Serif Display", serif;
     color: var(--lightgrey);
     text-align: center;
     letter-spacing: 0.5px;
-    font-weight: 700;
     font-size: 2.1rem;
-    margin: 100px 0 100px 0;
     color: var(--lightgrey);
   }
-  &__container {
-    margin-bottom: 50px;
+  &-text {
+    margin-top: 30px;
+    color: var(--lightgrey);
+    font-size: 1.3rem;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+
+    &_link {
+      color: var(--underline-rose);
+      font-weight: 900;
+    }
+    &_link:hover {
+      color: var(--lightgrey);
+    }
+  }
+}
+.gallery__container {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 900px) {
+  .gallery-section-bg {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 18rem;
+    color: var(--white);
+    text-shadow: -1px -1px 0 var(--underline-rose),
+      1px -1px 0 var(--underline-rose), -1px 1px 0 var(--underline-rose),
+      1px 1px 0 var(--underline-rose);
+    letter-spacing: 50px;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  .gallery__welcome-header {
+    font-size: 2.5rem;
+  }
+  .gallery__welcome-text {
+    font-size: 1.6rem;
   }
 }

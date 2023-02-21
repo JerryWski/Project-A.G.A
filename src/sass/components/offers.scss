@@ -126,11 +126,11 @@
 
 .offer.four {
   background-color: transparent;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: start;
   max-width: 400;
   padding: 0;
-  margin-top: 0;
+  margin-top: 0px;
   order: -1;
   // background-image: url("../img/bg-logo-beauty-grey.png");
   .four__text-small {
@@ -160,5 +160,8 @@
   }
   .offer-underline {
     margin-bottom: 80px;
+  }
+  .offer.four {
+    justify-content: center;
   }
 }
