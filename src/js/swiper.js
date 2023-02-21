@@ -36,11 +36,11 @@ const swiper = new Swiper(".mySwiper", {
     },
     950: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     1250: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 30,
     }
   },
 });
