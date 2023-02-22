@@ -1,6 +1,8 @@
 @use "../utils" as *;
 
 .gallery-section {
+  
+  padding: 20px;
   padding-top: 50px;
   position: relative;
   &-bg {
@@ -9,14 +11,13 @@
 }
 
 .gallery__welcome {
-  padding: 20px;
+  
   &-header {
     font-family: "Noto Serif Display", serif;
     color: var(--lightgrey);
     text-align: center;
     letter-spacing: 0.5px;
     font-size: 2.1rem;
-    color: var(--lightgrey);
   }
   &-text {
     margin-top: 30px;
