@@ -216,6 +216,7 @@ header {
   }
   .wrapper.one {
     order: 0;
+    flex-direction: column;
   }
   .wrapper__header {
     font-size: 7rem;
