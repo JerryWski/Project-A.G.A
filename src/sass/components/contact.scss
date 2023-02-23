@@ -3,16 +3,37 @@
   padding: 20px;
   background: var(--black);
 }
-.contact-header {
-  font-family: "Noto Serif Display", serif;
-  text-align: left;
-  letter-spacing: 0.5px;
-  font-size: 2.1rem;
-  margin-top: 60px;
-  width: 40%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--underline-rose);
-  margin-bottom: 50px;
+.contact__welcome {
+  display: flex;
+  flex-direction: column;
+  &-flower {
+    display: none;
+    width: 30px;
+  }
+
+  &-header {
+    font-family: "Noto Serif Display", serif;
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-size: 2.3rem;
+    margin-top: 60px;
+    max-width: 209px;
+    padding-bottom: 0px;
+    border-bottom: 3px solid var(--underline-rose);
+    margin-bottom: 50px;
+    position: relative;
+  }
+  &-header::after {
+    position: absolute;
+    content: "";
+    background-image: url('../img/bye-flower.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 19px;
+    right: -6px;
+    width: 65px;
+    height: 65px;
+  }
 }
 
 .contact-wrapper {
@@ -20,6 +41,7 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  margin-top: 50px;
 }
 .map__container {
   width: 100%;
@@ -37,26 +59,34 @@
   flex-direction: column;
   justify-content: flex-start;
   order: -2;
-  gap: 10px;
+  gap: 20px;
+  position: relative;
 
   &__title {
     font-size: 1.3rem;
     margin-bottom: 10px;
     line-height: 30px;
+
+    span {
+      color: var(--underline-rose);
+      text-transform: uppercase;
+    }
   }
 
   &__open-info {
+    font-size: 1.2rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 }
-.media-wrapper {
+.media {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   order: -1;
 }
 .media__header {
@@ -65,6 +95,11 @@
 .fa-square-facebook,
 .fa-instagram {
   color: var(--underline-rose);
+  transition: color 0.3s ease;
+}
+.fa-square-facebook:hover,
+.fa-instagram:hover {
+  color: var(--white);
 }
 .media__social {
   padding: 5px 0 0 0;
@@ -73,28 +108,46 @@
     margin-right: 5px;
   }
 }
+.media__quote {
+  display: none;
+}
 
 @media (min-width: 900px) {
   .contact-wrapper {
-    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
     flex-direction: row;
     gap: 40px;
-    justify-content: space-evenly;
     align-items: flex-start;
   }
-  .contact-header {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 0px;
-    border-bottom: none;
-    font-size: 2.5rem;
-  }
+  .contact__welcome {
+    align-items: center;
 
+    &-flower {
+      display: block;
+      margin-top: 60px;
+    }
+
+    &-header {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 0px;
+      border-bottom: none;
+      font-size: 2.6rem;
+      color: var(--white);
+      &::after {
+        display: none;
+      }
+    }
+  }
   .contacts {
+    overflow: visible;
+    position: relative;
     order: 0;
     max-width: 33%;
   }
-  .media-wrapper {
+  .media {
     order: 1;
     max-width: 33%;
   }
@@ -102,11 +155,38 @@
     font-size: 1.4rem;
     margin-top: 0px;
   }
+  .media__quote {
+    width: 100%;
+    opacity: 0.4;
+    font-family: Elsie;
+    text-transform: uppercase;
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+    padding: 10px;
+    margin-top: 30px;
+
+    &-author {
+      text-transform: none;
+      margin-top: 25px;
+      font-style: italic;
+      font-family: "Dancing Script", cursive;
+      font-size: 1.2rem;
+    }
+  }
   .map__container {
     max-width: 33%;
   }
   .map__container-header {
     text-align: center;
     font-size: 1.4rem;
+  }
+  .test {
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    border-bottom: 1px solid var(--underline-rose);
+    margin-bottom: 20px;
   }
 }
