@@ -18,9 +18,9 @@
     font-family: "Noto Serif Display", serif;
     text-align: left;
     letter-spacing: 0.5px;
-    font-size: 2.3rem;
-    margin-top: 60px;
-    max-width: 180px;
+    font-size: 3.3rem;
+    margin-top: 30px;
+    max-width: 230px;
     padding-bottom: 0px;
     border-bottom: 23px solid var(--underline-rose);
     margin-bottom: 50px;
@@ -116,9 +116,11 @@
     gap: 40px;
   }
   .contact__welcome {
+    padding: 60px;
     grid-column: 2/3;
     grid-row: 1/2;
     &-header {
+      
       margin: 0;
       font-weight: 300;
       padding-bottom: 0px;
