@@ -14,3 +14,15 @@
   width: 100%;
   min-height:340px;
 }
+
+@media (min-width:900px) {
+  .mapouter {
+    min-height: 440px;
+  }
+  .gmap_canvas {
+    min-height: 440px;
+  }
+  .gmap-frame {
+    min-height:440px;
+  }
+}

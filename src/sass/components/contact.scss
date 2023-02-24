@@ -6,6 +6,9 @@
 .contact__welcome {
   display: flex;
   flex-direction: column;
+  order: -2;
+  align-items: start;
+  width: 100%;
   &-flower {
     display: none;
     width: 30px;
@@ -17,22 +20,11 @@
     letter-spacing: 0.5px;
     font-size: 2.3rem;
     margin-top: 60px;
-    max-width: 209px;
+    max-width: 180px;
     padding-bottom: 0px;
-    border-bottom: 3px solid var(--underline-rose);
+    border-bottom: 23px solid var(--underline-rose);
     margin-bottom: 50px;
     position: relative;
-  }
-  &-header::after {
-    position: absolute;
-    content: "";
-    background-image: url('../img/bye-flower.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 19px;
-    right: -6px;
-    width: 65px;
-    height: 65px;
   }
 }
 
@@ -114,42 +106,52 @@
 
 @media (min-width: 900px) {
   .contact-wrapper {
-    margin-top: 30px;
-    margin-bottom: 60px;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    max-height: 600px;
+    margin-top: 70px;
+    margin-bottom: 30px;
     gap: 40px;
-    align-items: flex-start;
   }
   .contact__welcome {
-    align-items: center;
-
-    &-flower {
-      display: block;
-      margin-top: 60px;
-    }
-
+    grid-column: 2/3;
+    grid-row: 1/2;
     &-header {
-      margin-top: 10px;
-      width: 100%;
-      text-align: center;
+      margin: 0;
+      font-weight: 300;
       padding-bottom: 0px;
       border-bottom: none;
-      font-size: 2.6rem;
+      letter-spacing: 5px;
+      font-size: 5.3rem;
       color: var(--white);
-      &::after {
-        display: none;
-      }
+    }
+  }
+  .contact__logo {
+    padding-left: 50px;
+    width: fit-content;
+    &-image {
+      border: 1px solid var(--white);
+    border-radius: 50%;
+      padding: 15px;
+      width: 200px;
     }
   }
   .contacts {
-    overflow: visible;
+    grid-column: 2/-3;
+    grid-row: 2/3;
     position: relative;
     order: 0;
-    max-width: 33%;
+    // max-width: 33%;
   }
   .media {
+    
+    align-self: start;
+    grid-column: 3/-2;
+    grid-row: 3/2;
     order: 1;
-    max-width: 33%;
+    // max-width: 33%;
   }
   .media__header {
     font-size: 1.4rem;
@@ -161,28 +163,29 @@
     font-family: Elsie;
     text-transform: uppercase;
     display: block;
-    font-size: 2.5rem;
-    letter-spacing: 5px;
+    font-size: 2.3rem;
+    letter-spacing: 3px;
     font-weight: 300;
-    padding: 10px;
-    margin-top: 30px;
+    margin-top: 15px;
 
     &-author {
       text-transform: none;
-      margin-top: 25px;
+      margin-top: 15px;
       font-style: italic;
       font-family: "Dancing Script", cursive;
       font-size: 1.2rem;
     }
   }
   .map__container {
-    max-width: 33%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    // max-width: 33%;
   }
   .map__container-header {
     text-align: center;
     font-size: 1.4rem;
   }
-  .test {
+  .contact-underline {
     margin: 0 auto;
     display: block;
     width: 70%;
