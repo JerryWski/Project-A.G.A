@@ -1,6 +1,5 @@
 .team-section {
-  padding: 20px;
-  padding-top: 60px;
+  padding: 60px 20px 60px 20px;
   display: grid;
   justify-content: space-around;
   align-items: center;
@@ -8,32 +7,34 @@
 }
 
 .team-header {
-  color: var(--black);
+  font-family: var(--secondfont);
+  color: var(--lightgrey);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   margin-bottom: 45px;
 }
 
 .persons-container {
-  border: 1px solid red;
-  padding: 17px 0 17px 0;
+  padding: 17px;
   border-radius: 7px;
-  border: 1px solid var(--white);
+//   border: 1px solid var(--white);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 
   .person {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: var(--black);
     margin: auto;
-    border-radius: 5px;
+    border-radius: 7px;
     width: 260px;
     height: 350px;
+    position: relative;
 
     &__photo {
       margin: 0 auto 0 auto;
@@ -45,20 +46,47 @@
         object-fit: cover;
       }
     }
-
     &__info {
-      border: 1px solid var(--black);
+      box-shadow: 1px -33px 7px -24px rgb(255, 255, 255);
+      position: absolute;
+      top: 43%;
       text-align: center;
+      background: var(--white);
+      border-radius: 7px;
 
       &-title {
-        text-align: center;
-        width: 100%;
+        background: transparent;
+        padding: 7px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--underline-rose);
       }
-    }
-
-    &-link {
-      text-align: center;
-      display: block;
+      &-text {
+        max-width: 340px;
+        padding: 7px;
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.2rem;
+        margin-bottom: 10px;
+      }
+      &-link {
+        color: var(--underline-rose);
+        justify-content: center;
+        font-size: 0.8rem;
+        font-family: "IBM Plex Sans", sans-serif;
+        width: 50%;
+        padding: 4px 12px;
+        border: 1px solid var(--underline-rose);
+        outline: none;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: background 0.3s ease;
+        &:hover {
+          background: var(--lightgrey);
+          border: 1px solid var(--lightgrey);
+          color: var(--white);
+        }
+      }
     }
   }
 }
