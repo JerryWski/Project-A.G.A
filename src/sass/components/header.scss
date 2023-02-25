@@ -8,7 +8,7 @@ header {
 }
 
 .navbar {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   width: 100%;
   height: fit-content;
@@ -110,7 +110,7 @@ header {
   }
 
   &__text {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 0.9rem;
     text-align: left;
     color: var(--black);
@@ -123,44 +123,34 @@ header {
 
   &__image {
     width: 100%;
-    border-radius: 15px 50px 30px
+    border-radius: 15px 50px 30px;
   }
+}
+.button-link {
 
-  &__button {
-    font-family: var(--secondfont);
-    margin-top: 30px;
-    font-size: 0.8rem;
-    width: 47%;
-    padding: 14px 22px;
-    border: 1px solid var(--underline-rose);
-    background: none;
-    outline: none;
-    cursor: pointer;
-    color: var(--underline-rose);
-    border-radius: 20px;
-    transition: 0.3s background ease;
-    background: transparent;
-  }
+  align-self: flex-start;
+  text-align: center;
+  font-family: var(--secondfont);
+  margin-top: 30px;
+  font-size: 0.8rem;
+  width: 47%;
+  padding: 14px 22px;
+  border: 1px solid var(--underline-rose);
+  background: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--underline-rose);
+  border-radius: 20px;
+  transition: 0.3s background ease;
+  background: transparent;
 
-  &__button:hover {
+  &:hover {
     background: var(--lightgrey);
     border: 1px solid var(--lightgrey);
     color: var(--white);
   }
 }
-.wrapper .button-link {
-  display: flex;
-  width: 100%;
-}
-// .offer-arrow {
-//   margin-top: 30px;
-//   background-image: url("../img/arrow2.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   transform: translate(18deg);
-//   width: 40%;
-//   height: 50px;
-// }
+
 .wrapper.one {
   order: 1;
   position: relative;
@@ -232,7 +222,6 @@ header {
     padding-top: 14px;
     font-size: 0.7rem;
   }
-
 }
 
 @keyframes linksAnimation {
