@@ -1,23 +1,49 @@
 .team-section {
-  padding: 60px 20px 60px 20px;
+  padding: 100px 20px 60px 20px;
   display: grid;
   justify-content: space-around;
   align-items: center;
   background-color: var(--bg-grey);
+  
+}
+.team__welcome {
+    width: 100%;
+    position: relative;
+    position: relative;
+    margin-bottom: 20px;
+
+    &-bg {
+        position: absolute;
+        height: 130px;
+        width: 100%;
+        background-image: url(../img/floral3.svg);
+        background-position: center -2px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .1;
+    }
 }
 
 .team-header {
+  display: block;
   font-family: var(--secondfont);
-  color: var(--lightgrey);
+  color: var(--underline-rose);
   text-align: center;
   font-size: 2.1rem;
-  margin-bottom: 45px;
+    
+}
+.team-subheader {
+    font-family: Dancing Script,cursive;
+    color: var(--lightgrey);
+    font-size: 1.8rem;
+    margin-bottom: 45px;
+    text-align: center;
 }
 
 .persons-container {
   padding: 17px;
   border-radius: 7px;
-//   border: 1px solid var(--white);
+    border: 1px solid var(--white);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -46,16 +72,16 @@
       }
     }
     &__info {
-    //   box-shadow: 1px -33px 7px -24px rgb(255, 255, 255);
+      //   box-shadow: 1px -33px 7px -24px rgb(255, 255, 255);
       position: absolute;
-      top: 41%;
+      top: 40%;
       text-align: center;
       background: var(--white);
       border-radius: 7px;
 
       &-title {
         background: transparent;
-        padding: 7px;
+        padding: 17px;
         font-size: 1.3rem;
         font-weight: 700;
         color: var(--underline-rose);
@@ -66,7 +92,7 @@
         font-size: 0.9rem;
         font-weight: 300;
         line-height: 1.2rem;
-        margin-bottom: 14px;
+        margin-bottom: 5px;
       }
       &-link {
         color: var(--underline-rose);
@@ -94,8 +120,15 @@
   }
 }
 
-@media (min-width:900px) {
-    .person {
-        gap: 20px;
-    }
+@media (min-width: 900px) {
+  .person {
+    gap: 20px;
+  }
+  .team-header {
+    font-size: 2.4rem;
+    //   margin-bottom: 45px;
+  }
+  .team-section {
+    
+  }
 }
