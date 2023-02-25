@@ -2,43 +2,44 @@
   padding: 20px;
   margin-top: 30px;
   display: grid;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.team-container {
-  width: 100%;
+.team-header {
+  text-align: center;
+}
+
+.persons-container {
   border: 1px solid red;
   padding-block: 30px;
-  display: grid;
-  justify-content: space-around;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  
-  .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+
+  .person {
     margin: auto;
     border: 1px solid black;
     border-radius: 5px;
-    position: relative;
-    width: 285px;
+    width: 260px;
     height: 350px;
 
     &__info {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      
-      .card-title {
+
+      &-title {
         text-align: center;
         width: 100%;
       }
     }
+
+    &-link {
+      text-align: center;
+      display: block;
+    }
   }
 }
-.card-link {
-  padding-top: rem(28);
-  color: var(--white);
-  text-align: center;
-  text-decoration: overline;
-  display: block;
-  font-size: rem(22);
-  font-weight: 300;
-}
+
