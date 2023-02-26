@@ -1,0 +1,82 @@
+.prices-section {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-rose);
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: block;
+  text-align: left;
+  font-size: 2.4rem;
+  font-family: var(--secondfont);
+  color: var(--black);
+}
+
+.prices-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+table {
+  text-align: left;
+  background-color: var(--white);
+  // max-width: 45%;
+  font-family: IBM Plex Sans, sans-serif;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+caption {
+  background-color: var(--bg-grey);
+  color: var(--black);
+  font-size: 1.2rem;
+  padding: 20px 0 20px 0;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  font-weight: 900;
+}
+th {
+  background-color: var(--lightgrey);
+  color: var(--white);
+  padding: 5px 0 5px 5px;
+  font-size: 1.1rem;
+}
+.sub-caption {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--bg-grey);
+    color: var(--black);
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--lightgrey);
+    border-spacing: 10px;
+}
+
+td {
+  background-color: var(--bg-grey);
+  padding: 5px 0 5px 5px;
+  font-size: 0.9rem;
+  color: var(--black);
+  border-bottom: 1px solid var(--lightgrey);
+}
+td:nth-child(2) {
+  min-width: 77px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.td-transparent {
+  color: transparent;
+}
+.td-microtext {
+    font-size: 0.7rem;
+    font-style: italic;
+}
