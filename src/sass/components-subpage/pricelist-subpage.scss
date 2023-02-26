@@ -80,3 +80,10 @@ td:nth-child(2) {
     font-size: 0.7rem;
     font-style: italic;
 }
+
+
+@media (min-width:900px) {
+    .prices-container {
+        align-items: flex-start;
+    }
+}
