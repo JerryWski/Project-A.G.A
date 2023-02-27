@@ -6,12 +6,18 @@
   justify-content: center;
   align-items: center;
 }
+// .prices-welcome {
+//   background-color: var(--white);
+//   width: 100%;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .prices-header {
   margin-top: 60px;
   margin-bottom: 30px;
   display: block;
-  text-align: left;
+  text-align: center;
   font-size: 3.1rem;
   letter-spacing: 5px;
   font-family: var(--secondfont);
@@ -19,25 +25,34 @@
 }
 .prices-subheader {
   text-align: center;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 15px;
 }
 .prices-link {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
   margin-bottom: 60px;
   font-size: 1.3rem;
   color: var(--underline-rose);
-  font-family: 'Elsie', cursive;
+  font-family: "Elsie", cursive;
   font-style: italic;
+  transition: 0.3s color ease-in;
+  &:hover {
+    color: var(--black);
+  }
 }
-
+.content-wrapper {
+  display: flex;
+}
 .prices-container {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 60px;
-    flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .table {
@@ -46,6 +61,7 @@
   // max-width: 45%;
   font-family: IBM Plex Sans, sans-serif;
   table-layout: auto;
+  width: 100%;
   border-bottom-left-radius: 7px;
   border-collapse: collapse;
 }
@@ -66,14 +82,14 @@ th {
   font-size: 1.1rem;
 }
 .sub-caption {
-    text-align: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: var(--bg-grey);
-    color: var(--black);
-    font-size: 1.2rem;
-    border-bottom: 1px solid var(--lightgrey);
-    border-spacing: 10px;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--bg-grey);
+  color: var(--black);
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--lightgrey);
+  border-spacing: 10px;
 }
 
 td {
@@ -93,24 +109,45 @@ td:nth-child(2) {
   color: transparent;
 }
 .td-microtext {
-    font-size: 0.7rem;
-    font-style: italic;
+  font-size: 0.7rem;
+  font-style: italic;
 }
-.last-cell-left{
+.last-cell-left {
   border-bottom-left-radius: 7px;
   border: none;
 }
-.last-cell-right{
+.last-cell-right {
   border-bottom-right-radius: 7px;
   border: none;
 }
 
-.contact-section {
-  margin-top: 90px;
+.something-container {
+  display: none;
 }
 
-@media (min-width:900px) {
-    .prices-container {
-        align-items: flex-start;
-    }
+@media (min-width: 900px) {
+  .prices-section {
+    padding-bottom: 0;
+  }
+  .content-wrapper {
+    justify-content: space-around;
+    padding: 30px;
+    padding-bottom: 60px;
+    
+  }
+  .prices-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    background-image: url("../img/bg-logo-beauty-rose.png");
+  }
+  .table-left {
+    width: 50%;
+  }
+  .something-container {
+    align-self: flex-start;
+    justify-content: space-around;
+    max-width: 35%;
+    display: block;
+  }
 }
