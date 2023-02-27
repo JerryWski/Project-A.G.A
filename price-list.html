@@ -61,11 +61,14 @@
     </header>
 
     <main>
+
       <section class="prices-section">
-        <h1>Cennik</h1>
+        <h1 class="prices-header">Cennik</h1>
+        <h3 class="prices-subheader">Jeżeli masz pytania dotyczące oferowanych przez nas usług</h3>
+        <a class="prices-link" href="#subpage-contact">Skontakuj się z nami!</a>
         <div clas="content-wrapper">
           <div class="prices-container">
-            <table>
+            <table class="table table-left">
               <caption>
                 Kosmetologia Estetyczna
               </caption>
@@ -265,13 +268,13 @@
                   <td>700 zł</td>
                 </tr>
                 <tr>
-                  <td>Owal twarzy</td>
-                  <td>700 zł</td>
+                  <td class="last-cell-left">Owal twarzy</td>
+                  <td class="last-cell-right">700 zł</td>
                 </tr>
               </tbody>
             </table>
 
-            <table>
+            <table class="table table-right">
               <caption>
                 Kosmetyka Biała
               </caption>
@@ -433,8 +436,8 @@
                   <td>500 zł</td>
                 </tr>
                 <tr>
-                  <td>kreska dekoracyjna i ceniowana</td>
-                  <td>600 zł</td>
+                  <td class="last-cell-left">kreska dekoracyjna i ceniowana</td>
+                  <td class="last-cell-right">600 zł</td>
                 </tr>
             </table>
 
@@ -442,6 +445,87 @@
           <div class="something-container"></div>
         </div>
       </section>
+
+      <section id="subpage-contact" class="contact-section">
+        <div class="contact-wrapper">
+          <div class="contact__welcome">
+            <h2 class="contact__welcome-header">Kontakt</h2>
+          </div>
+          <div class="contact__logo">
+            <img
+              class="contact__logo-image"
+              src="./src/img/logo-two.png"
+              alt=""
+            />
+          </div>
+
+          <div class="map__container">
+            <h3 class="map__container-header">
+              Gdzie nas znajdziesz? <i class="fa-solid fa-location-dot"></i>
+            </h3>
+
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  class="gmap-frame"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Salon%20beauty%20logic,%20rolna%2016,%20Olsztyn&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts">
+            <div class="contacts__title">
+              <h3 class="contacts__title-header">
+                Salon kosmetyki i wizażu <span>Beauty Logic</span> w Olsztynie
+              </h3>
+            </div>
+            <div class="contacts__address">
+              Adres: ul. Rolna 16, 10-805 Olsztyn
+            </div>
+            <div class="contacts__phone">Telefon: (+48) 887 545 887</div>
+            <div class="contacts__open-info">
+              <p class="contats__open">Czynne:</p>
+              <p class="contacts__dates">Pn.-Pt. 09:00 - 17:00</p>
+              <p class="contacts__dates">Sb. 09:00 - 16:00</p>
+              <p class="contacts__dates contacts__dates-closed">
+                Nd. - Nieczynne
+              </p>
+            </div>
+            <div class="contacts__mail">E-mail: agata.ambroziak@wp.pl</div>
+          </div>
+
+          <div class="media">
+            <h3 class="media__header">Odwiedź nas w social mediach</h3>
+            <div class="media__social">
+              <a
+                class="media__social-facebook"
+                href="https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/"
+                ><i class="fa-brands fa-square-facebook fa-2x"></i
+              ></a>
+              <a
+                class="media__social-instagram"
+                href="https://www.instagram.com/p/CoFEx07NS2H/"
+                ><i class="fa-brands fa-instagram fa-2x"></i
+              ></a>
+            </div>
+            <div class="media__quote">
+              <p class="media__quote-text">"You're never</p>
+              <p class="media__quote-text">too OLD to</p>
+              <p class="media__quote-text">become YOUNGER"</p>
+              <p class="media__quote-author">Mae West</p>
+            </div>
+          </div>
+        </div>
+        <span class="contact-underline"></span>
+      </section>
+
     </main>
 
     <script
