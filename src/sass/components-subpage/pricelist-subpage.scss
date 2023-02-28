@@ -1,51 +1,65 @@
 .prices-section {
-  padding: 10px;
   display: flex;
   flex-direction: column;
-  background: var(--bg-rose);
+  background: var(--white);
   justify-content: center;
   align-items: center;
 }
-// .prices-welcome {
-//   background-color: var(--white);
-//   width: 100%;
-//   justify-content: center;
-//   align-items: center;
-// }
+.prices-welcome {
+  margin-top: 88px;
+  background: linear-gradient(
+    rgba(255, 255, 255, .4), 
+    rgba(255, 255, 255,.4)
+  ), url("../img/pinkflower-web.png");
+  background-repeat: no-repeat;
+  width: 100%;
+}
 
 .prices-header {
   margin-top: 60px;
   margin-bottom: 30px;
   display: block;
   text-align: center;
-  font-size: 3.1rem;
+  font-size: 4.1rem;
   letter-spacing: 5px;
   font-family: var(--secondfont);
-  color: var(--black);
+  color: var(--white);
 }
 .prices-subheader {
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.3rem;
   font-weight: 300;
+  color: var(--black);
+  font-style: italic;
+  font-size: 1.2rem;
+  padding: 5px;
   margin-bottom: 15px;
 }
 .prices-link {
   width: 100%;
   display: inline-block;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-size: 1.3rem;
-  color: var(--underline-rose);
+  color: var(--map-dot);
   font-family: "Elsie", cursive;
   font-style: italic;
+  font-weight: 500;
   transition: 0.3s color ease-in;
+  position: relative;
   &:hover {
     color: var(--black);
   }
 }
+.prices-link-arrow {
+  margin-top: 15px;
+  transform: translateY(0);
+  animation: jumping 2s infinite ease both;
+}
 .content-wrapper {
+  padding: 20px;
   display: flex;
+  padding-top: 60px;
 }
 .prices-container {
   align-items: center;
@@ -102,7 +116,7 @@ td {
 td:nth-child(2) {
   min-width: 77px;
   text-align: right;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .td-transparent {
@@ -139,15 +153,41 @@ td:nth-child(2) {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    background-image: url("../img/bg-logo-beauty-rose.png");
+    background-repeat: no-repeat;
   }
   .table-left {
     width: 50%;
   }
-  .something-container {
-    align-self: flex-start;
-    justify-content: space-around;
-    max-width: 35%;
-    display: block;
+  td:nth-child(2) {
+    padding-right: 5px;
+  }
+
+  .prices-header {
+    font-size: 5rem;
+    text-align: left;
+    text-indent: 250px;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  .prices-link, .prices-subheader {
+    text-align: right;
+    padding-right: 150px;
+    
+  }
+  .prices-subheader {
+    font-size: 1.3rem;
+  }
+}
+
+
+@keyframes jumping {
+  0%{
+    transform: translateY(0px)
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
   }
 }
