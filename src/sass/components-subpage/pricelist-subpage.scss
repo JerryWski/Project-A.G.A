@@ -6,10 +6,13 @@
   align-items: center;
 }
 .prices-welcome {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
   margin-top: 88px;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
     ),
     url("../img/pinkflower-web.png");
   background-repeat: no-repeat;
@@ -24,7 +27,7 @@
   font-size: 4.1rem;
   letter-spacing: 5px;
   font-family: var(--secondfont);
-  color: var(--white);
+  color: var(--black);
 }
 .prices-subheader {
   text-align: center;
@@ -37,19 +40,21 @@
   margin-bottom: 15px;
 }
 .prices-link {
-  width: 100%;
+  width: fit-content;
   display: inline-block;
   text-align: center;
+  margin: auto;
   margin-bottom: 50px;
   font-size: 1.3rem;
-  color: var(--map-dot);
+  color: var(--black);
   font-family: "Elsie", cursive;
   font-style: italic;
   font-weight: 500;
-  transition: 0.3s color ease-in;
+  transition: 0.3s all ease-in;
   position: relative;
   &:hover {
-    color: var(--black);
+    color: var(--lightgrey);
+    transform: scale(1.1);
   }
 }
 .prices-link-arrow {
@@ -58,6 +63,7 @@
   animation: jumping 2s infinite ease both;
 }
 .content-wrapper {
+  background-color: var(--white);
   padding: 20px;
   display: flex;
   padding-top: 60px;
@@ -169,7 +175,6 @@ td:nth-child(2) {
     padding: 60px 20px 60px 20px;
     padding-bottom: 60px;
     width: 100%;
-    background-color: var(--bg-rose);
   }
   .content-header {
     font-size: 2.1rem;
@@ -186,29 +191,41 @@ td:nth-child(2) {
     position: relative;
     height: 800px;
   }
-  .uno,.dos,.tres {
+  .prices-photo-img {
+    width: 100%;
+  }
+  .uno,.dos,.tres,.quatro {
     position: absolute;
     top: 0;
     right: 0;
   }
   .uno {
     top: 10%;
-    border: 1px solid purple;
+    border-radius: 7px;
+    box-shadow: 0px 15px 14px -4px rgba(0,0,0,0.75);
   }
   .dos{
-    border: 1px solid red;
-    z-index: 1;
+    z-index: 2;
     top: 40%;
-    left: 10%;
-    width: 200px;
+    left: 15%;
+    
+    border-radius: 7px;
+    box-shadow: 0px 15px 14px -4px rgba(0,0,0,0.75);
   }
   .tres {
     top: 70%;
-    border: 1px solid yellow;
+    z-index: 0;
+    border-radius: 7px;
+    box-shadow: 0px 15px 14px -4px rgba(0,0,0,0.75);
   }
-  .prices-photo-img {
-    width: 100%;
+  .quatro {
+    z-index: 1;
+    top: 100%;
+    left: 15%;
+    border-radius: 7px;
+    box-shadow: 0px 15px 14px -4px rgba(0,0,0,0.75);
   }
+  
   .table {
     width: 30%;
   }
@@ -216,7 +233,11 @@ td:nth-child(2) {
   td:nth-child(2) {
     padding-right: 5px;
   }
-
+.prices-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
   .prices-header {
     font-size: 5rem;
     text-align: left;
@@ -231,6 +252,11 @@ td:nth-child(2) {
   }
   .prices-subheader {
     font-size: 1.3rem;
+  }
+  .prices-link {
+    display: inline-block;
+    margin-right: 0;
+    
   }
 }
 

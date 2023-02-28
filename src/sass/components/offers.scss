@@ -144,7 +144,8 @@
   }
   .offer-container {
     flex-direction: row;
-    gap: 0;
+    gap: 60px;
+    justify-content: center;
   }
   .offer-header {
     width: 100%;
