@@ -89,21 +89,18 @@
   margin-top: 20px;
 }
 .fa-square-facebook,
-.fa-instagram {
+.fa-instagram,
+.fa-linkedin {
   color: var(--underline-rose);
   transition: color 0.3s ease;
+  margin: 5px;
 }
 .fa-square-facebook:hover,
-.fa-instagram:hover {
+.fa-instagram:hover,
+.fa-linkedin:hover {
   color: var(--white);
 }
-.media__social {
-  padding: 5px 0 0 0;
 
-  &-facebook {
-    margin-right: 5px;
-  }
-}
 .media__quote {
   display: none;
 }

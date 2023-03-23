@@ -1,10 +1,5 @@
 header {
-  // background-image: url("../img/face.jpg");
-  // background-position: center 85px;
-  // background-size: contain;
-  // background-repeat: no-repeat;
   background-color: var(--bg-rose);
-  // height: 100vh;
 }
 
 .navbar {
@@ -45,10 +40,38 @@ header {
     &-item .links {
       margin-left: 50px;
       color: var(--black);
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       letter-spacing: 1px;
       padding: 5px;
+      transition: color 0.3s ease;
     }
+    &-item .links:hover {
+      color: var(--underline-rose);
+    }
+  }
+  &__social {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 20px;
+    &-link {
+      &_facebook,
+      &_instagram,
+      &_linkedln {
+        color: inherit;
+        &:hover {
+          color: var(--black) !important;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    font-size: 1.1rem;
+    padding-right: 5px;
+    list-style: none;
+    color: var(--black);
+    border-right: 3px solid var(--underline-rose);
   }
 }
 .navbar-underline {
@@ -127,10 +150,9 @@ header {
   }
 }
 .button-link {
-
   align-self: flex-start;
   text-align: center;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   margin-top: 30px;
   font-size: 0.8rem;
   width: 47%;
@@ -191,6 +213,12 @@ header {
       position: relative;
       margin-left: 0;
     }
+  }
+  .navbar__contact {
+    display: none;
+  }
+  .navbar__social {
+    display: none;
   }
 }
 .active {
