@@ -32,6 +32,7 @@ header {
   &__list {
     list-style: none;
     margin-right: auto;
+    // align-self: center;
 
     &-item {
       display: inline-block;
@@ -60,7 +61,7 @@ header {
       &_facebook,
       &_instagram,
       &_linkedln {
-        margin: 5px;
+        margin: 7px;
         font-size: 1.3rem;
         transition: .3s color ease;
         color: var(--black);
@@ -72,12 +73,11 @@ header {
   }
 
   &__contact {
-    position: relative;
     font-size: 1rem;
-    padding-right: 5px;
+    padding: 5px;
     list-style: none;
     color: var(--black);
-    font-weight: 500;
+    font-weight: 300;
     // border-right: 3px solid var(--black);
     transition: color 0.3s ease;
     cursor: default;
@@ -190,6 +190,17 @@ header {
   order: 1;
   position: relative;
   max-width: 536px;
+}
+
+
+@media (max-width: 1170px) {
+  .navbar__list-item .links {
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  .navbar__contact, .navbar__social {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 900px) {
