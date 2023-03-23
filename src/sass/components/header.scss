@@ -40,7 +40,7 @@ header {
     &-item .links {
       margin-left: 50px;
       color: var(--black);
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       letter-spacing: 1px;
       padding: 5px;
       transition: color 0.3s ease;
@@ -52,26 +52,39 @@ header {
   &__social {
     display: flex;
     list-style: none;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     margin-right: 20px;
     &-link {
       &_facebook,
       &_instagram,
       &_linkedln {
-        color: inherit;
+        margin: 5px;
+        font-size: 1.3rem;
+        transition: .3s color ease;
+        color: var(--black);
         &:hover {
-          color: var(--black) !important;
+          color: var(--underline-rose);
         }
       }
     }
   }
 
   &__contact {
-    font-size: 1.1rem;
+    position: relative;
+    font-size: 1rem;
     padding-right: 5px;
     list-style: none;
     color: var(--black);
-    border-right: 3px solid var(--underline-rose);
+    font-weight: 500;
+    // border-right: 3px solid var(--black);
+    transition: color 0.3s ease;
+    cursor: default;
+    &:hover {
+      color: var(--underline-rose);
+      // border-right: 3px solid var(--underline-rose);
+    }
   }
 }
 .navbar-underline {
