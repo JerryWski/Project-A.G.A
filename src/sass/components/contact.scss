@@ -69,9 +69,19 @@
     }
   }
 
-  &__open-info {
-    font-size: 1.2rem;
+  &__address, &__phone {
+    font-size: 1.3rem;
     font-weight: 700;
+  }
+  &__phone-link {
+    color: var(--underline-rose);
+   text-decoration: none;
+  //  pointer-events: none;
+   cursor: default;
+  }
+
+  &__open-info {
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -148,6 +158,9 @@
     position: relative;
     order: 0;
     // max-width: 33%;
+    &__phone-link {
+      pointer-events: none;
+    }
   }
   .media {
     
