@@ -100,10 +100,13 @@
     transform: translateX(5px);
     stroke: var(--white);
   }
+  &__image {
+    margin-bottom: 5px;
+  }
 }
 .offer.one .offer__image {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .offer.two {
   border: 1px solid var(--lightrose);
@@ -124,12 +127,12 @@
   }
 }
 .offer.two .offer__image {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 80px;
 }
 .offer.three .offer__image {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 
