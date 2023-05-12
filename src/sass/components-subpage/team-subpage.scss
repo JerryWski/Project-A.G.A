@@ -7,6 +7,7 @@
   align-items: center;
 }
 .workers-welcome {
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,9 +27,79 @@
     text-align: center;
     font-size: 2.1rem;
     letter-spacing: 5px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-family: var(--secondfont);
     color: var(--black);
+  }
+}
+.workers-subheader {
+  text-align: center;
+  padding: 0 0px 10px 0px;
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: 300;
+  width: 70%;
+  margin-top: 150px;
+  margin-bottom: 80px;
+  border-bottom: 12px solid var(--bg-grey);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: var(--black);
+  font-size: 1.5rem;
+  word-break: break-word;
+}
+#worker-one {
+  margin-bottom: 50px;
+}
+#worker-two {
+  background-color: var(--bg-grey);
+}
+.worker {
+  font-family: IBM Plex Sans, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--black);
+  padding: 20px;
+  gap: 20px;
+  &_image {
+    max-width: 500px;
+    &__element {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  &_info {
+    max-width: 500px;
+
+    .worker_name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--underline-rose);
+      margin-bottom: 5px;
+    }
+
+    .worker_occupation {
+      font-style: italic;
+      margin: 0 0 7px 0;
+    }
+    .worker_occupation:nth-of-type(2) {
+      margin-bottom: 15px;
+    }
+    .worker_description {
+      line-height: 1.4rem;
+      margin: 0 0 5px 0;
+    }
+    .worker_specialization {
+      padding-left: 10px;
+      margin-top: 10px;
+      // display: flex;
+      // flex-wrap: wrap;
+      // gap: 20px;
+      &__item {
+        font-style: italic;
+      }
+    }
   }
 }
 
@@ -38,8 +109,16 @@
     background-position: 0 0;
     &__header {
       font-size: 5rem;
-      text-align: left;
+      text-align: center;
       text-indent: 250px;
     }
+  }
+  .workers-subheader {
+    font-size: 2.1rem;
+  }
+  .worker {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
   }
 }

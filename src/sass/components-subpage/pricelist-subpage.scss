@@ -28,7 +28,6 @@
   letter-spacing: 5px;
   font-family: var(--secondfont);
   color: var(--black);
-  text-transform: uppercase;
 }
 .prices-subheader {
   text-align: center;
@@ -67,7 +66,7 @@
   background-color: var(--white);
   padding: 20px;
   display: flex;
-  padding-top: 60px;
+  padding-top: 150px;
   flex-direction: column;
 }
 .content-header {
@@ -184,6 +183,9 @@ td:nth-child(2) {
     align-items: flex-start;
     justify-content: center;
     width: 80%;
+  }
+  .prices-header {
+    text-transform: uppercase;
   }
   .prices-photo {
     display: flex;
