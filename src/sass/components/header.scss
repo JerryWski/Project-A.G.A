@@ -170,14 +170,14 @@ header {
   font-size: 0.8rem;
   width: 47%;
   padding: 14px 22px;
-  border: 1px solid var(--underline-rose);
+  border: 1px solid var(--black);
   background: none;
   outline: none;
   cursor: pointer;
-  color: var(--underline-rose);
+  color: var(--black);
   border-radius: 20px;
   transition: 0.3s background ease;
-  background: transparent;
+  
 
   &:hover {
     background: var(--lightgrey);
