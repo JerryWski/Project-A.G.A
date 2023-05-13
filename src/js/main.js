@@ -3,6 +3,7 @@ const navLinks = document.querySelectorAll(".navbar__list-item");
 const linksSelect = document.querySelectorAll(".links");
 const hamburgerBtn = document.querySelector(".hamburger");
 const footerYear = document.querySelector('.footer_year')
+console.log(footerYear);
 
 const toggleHamburger = () => {
   hamburgerBtn.classList.toggle("is-active");
@@ -30,7 +31,7 @@ const handleNavLinksAnimate = () => {
 
 const currentYear = () => {
   const year = new Date().getFullYear();
-  footerYear.innerHTML = "© Copyright" + " " + year;
+  footerYear.innerHTML = "Copyright ©" + " " + year;
 };
 
 currentYear();
