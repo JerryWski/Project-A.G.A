@@ -2,6 +2,7 @@ const navList = document.querySelector(".navbar__list");
 const navLinks = document.querySelectorAll(".navbar__list-item");
 const linksSelect = document.querySelectorAll(".links");
 const hamburgerBtn = document.querySelector(".hamburger");
+const footerYear = document.querySelector('.footer_year')
 
 const toggleHamburger = () => {
   hamburgerBtn.classList.toggle("is-active");
@@ -26,6 +27,13 @@ const handleNavLinksAnimate = () => {
     delayTime++;
   });
 };
+
+const currentYear = () => {
+  const year = new Date().getFullYear();
+  footerYear.innerHTML = "© Copyright" + " " + year;
+};
+
+currentYear();
 
 hamburgerBtn.addEventListener("click", toggleHamburger);
 navLinks.forEach((links) => {
