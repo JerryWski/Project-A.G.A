@@ -16,7 +16,7 @@
   }
 
   &-header {
-    font-family: "Noto Serif Display", serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: left;
     letter-spacing: 0.5px;
     font-size: 3.3rem;
@@ -26,6 +26,20 @@
     border-bottom: 23px solid var(--underline-rose);
     margin-bottom: 50px;
     position: relative;
+  }
+  &-shortcuts {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 3px;
+  }
+  &-link {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.2s ease-in-out;
+    margin: 3px;
+  }
+  &-link:hover {
+    color: var(--underline-rose);
   }
 }
 .contact__logo {
@@ -69,15 +83,16 @@
     }
   }
 
-  &__address, &__phone {
+  &__address,
+  &__phone {
     font-size: 1.3rem;
     font-weight: 700;
   }
   &__phone-link {
     color: var(--underline-rose);
-   text-decoration: none;
-  //  pointer-events: none;
-   cursor: default;
+    text-decoration: none;
+    //  pointer-events: none;
+    cursor: default;
   }
 
   &__open-info {
@@ -124,14 +139,13 @@
     max-height: 600px;
     margin-top: 70px;
     margin-bottom: 30px;
-    gap: 40px;
+    gap: 35px;
   }
   .contact__welcome {
     // padding: 0 60px 70px 60px;
     grid-column: 2/3;
     grid-row: 1/2;
     &-header {
-      
       margin: 0;
       font-weight: 300;
       padding-bottom: 0px;
@@ -140,6 +154,9 @@
       font-size: 5.3rem;
       color: var(--white);
     }
+    &-shortcuts {
+      margin-top: 20px;
+    }
   }
   .contact__logo {
     display: block;
@@ -147,7 +164,7 @@
     width: fit-content;
     &-image {
       border: 1px solid var(--white);
-    border-radius: 50%;
+      border-radius: 50%;
       padding: 15px;
       width: 200px;
     }
@@ -163,7 +180,6 @@
     }
   }
   .media {
-    
     align-self: flex-start;
     grid-column: 3/-2;
     grid-row: 3/2;
@@ -189,7 +205,7 @@
       text-transform: none;
       margin-top: 15px;
       font-style: italic;
-      font-family: "Dancing Script", cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 1.2rem;
     }
   }
