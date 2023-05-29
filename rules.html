@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="PL">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Salon urody Beauty Logic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="To jest salon urody dla kobiet. Znajdziesz tutaj ofertę zabiegów kosmetycznych oraz pielęgnacyjnych na paznokcie, ciało i włosy. Oferujmy przeróżne usługi dotyczące urody"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Elsie:wght@400;900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300&family=Noto+Serif+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Open+Sans:ital,wght@0,300;1,300;1,400;1,500;1,700&family=Poppins:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="shortcut icon" href="#" />
+    <!--to po to aby nie było błędu w konsoli-->
+  </head>
+
+  <body>
+    <header id="home">
+      <nav class="navbar">
+        <div class="navbar__image">
+          <a href="."
+            ><img
+              class="navbar__image-logo"
+              src="./src/img/logo-one.png"
+              alt="logo"
+          /></a>
+        </div>
+        <ul class="navbar__list">
+          <li class="navbar__list-item">
+            <a class="links" href="index.html#about-us">O Nas</a>
+          </li>
+          <!-- <li class="navbar__list-item">
+            <a class="links" href="#offers">Usługi</a>
+          </li> -->
+          <li class="navbar__list-item">
+            <a class="links" href="team.html">Zespół</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="links" href="index.html#gallery">Galeria</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="links" href="index.html#contact">Kontakt</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </nav>
+      <!-- <span class="navbar-underline"></span> -->
+    </header>
+
+    <main>
+      <section id="rules" class="rules-section">
+        <div class="rules_heading">
+          <h1 class="rules_heading__header">Regulamin salonu</h1>
+        </div>
+        <div class="rules_container">
+          <ol class="rules_list">
+            Rezerwacja wizyty:
+            <li class="rules_list__item">
+              Wizyty można rezerwować telefonicznie, przez aplikację booksy lub
+              osobiście w salonie.
+            </li>
+            <li class="rules_list__item">
+              W celu rezerwacji wymagane jest podanie imienia i nazwiska, numeru
+              telefonu oraz preferowanej daty i godziny wizyty.
+            </li>
+            <li class="rules_list__item">
+              W przypadku rezygnacji z wizyty, prosimy o poinformowanie nas o
+              tym co najmniej 24 godziny przed planowanym terminem. W przeciwnym
+              razie będziemy zmuszeni naliczyć opłatę za nieobecność w wysokości
+              50% wartości zabiegu.
+            </li>
+          </ol>
+          <ol class="rules_list">
+            Zmiana lub odwołanie wizyty
+            <li class="rules_list__item">
+              W przypadku chęci zmiany lub odwołania wizyty, prosimy o jak
+              najszybsze poinformowanie nas o tym telefonicznie.
+            </li>
+            <li class="rules_list__item">
+              W przypadku zmiany wizyty prosimy o podanie nowej preferowanej
+              daty i godziny.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="subpage-contact" class="contact-section">
+        <div class="contact-wrapper">
+          <div class="contact__welcome">
+            <h2 class="contact__welcome-header">Kontakt</h2>
+            <p class="contact__welcome-shortcuts">Na skróty</p>
+            <a class="contact__welcome-link" href="index.html">Strona Główna</a>
+            <a class="contact__welcome-link" href="price-list.html">Usługi</a>
+            <a class="contact__welcome-link" href="">Regulamin salonu</a>
+            <a class="contact__welcome-link" href="">Polityka Prywatności</a>
+          </div>
+          <div class="contact__logo">
+            <img
+              class="contact__logo-image"
+              src="./src/img/logo-two.png"
+              alt=""
+            />
+          </div>
+
+          <div class="map__container">
+            <h3 class="map__container-header">
+              Gdzie nas znajdziesz? <i class="fa-solid fa-location-dot"></i>
+            </h3>
+
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  class="gmap-frame"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Salon%20beauty%20logic,%20rolna%2016,%20Olsztyn&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts">
+            <div class="contacts__title">
+              <h3 class="contacts__title-header">
+                Salon kosmetyczny <span>Beauty Logic</span> w Olsztynie
+              </h3>
+            </div>
+            <div class="contacts__address">
+              <i class="fa-solid fa-map-location"></i> ul. Rolna 16, 10-805
+              Olsztyn
+            </div>
+            <div class="contacts__phone">
+              <a href="tel:+48887545887" class="contacts__phone-link"
+                ><i class="fa-solid fa-phone"></i> - 887 545 887</a
+              >
+            </div>
+            <div class="contacts__open-info">
+              <p class="contats__open">Czynne:</p>
+              <p class="contacts__dates">Pn.-Pt. 09:00 - 17:00</p>
+              <p class="contacts__dates">Sb. 09:00 - 16:00</p>
+              <p class="contacts__dates contacts__dates-closed">
+                Nd. - Nieczynne
+              </p>
+            </div>
+            <div class="contacts__mail">
+              <i class="fa-solid fa-envelope"></i> agata.ambroziak@wp.pl
+            </div>
+          </div>
+
+          <div class="media">
+            <h3 class="media__header">Odwiedź nas w social mediach</h3>
+            <div class="media__social">
+              <a
+                class="media__social-facebook"
+                href="https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/"
+                ><i class="fa-brands fa-square-facebook fa-2x"></i
+              ></a>
+              <a
+                class="media__social-instagram"
+                href="https://www.instagram.com/p/CoFEx07NS2H/"
+              >
+                <i class="fa-brands fa-square-instagram fa-2x"></i>
+              </a>
+              <a
+                class="navbar__social-linkedln--link"
+                href="https://www.linkedin.com/in/agatabeautylogicclinic/"
+                ><i class="fa-brands fa-linkedin fa-2x"></i
+              ></a>
+            </div>
+            <div class="media__quote">
+              <p class="media__quote-text">"You're never</p>
+              <p class="media__quote-text">too OLD to</p>
+              <p class="media__quote-text">become YOUNGER"</p>
+              <p class="media__quote-author">Mae West</p>
+            </div>
+          </div>
+        </div>
+        <span class="contact-underline"></span>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p class="footer_text">created by Jerry_Wski</p>
+        <p class="footer_year"></p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/4619b49638.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>
