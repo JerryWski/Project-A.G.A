@@ -25,7 +25,18 @@
   }
 }
 .rules_container {
-    padding: 40px;
+    padding: 0 40px 40px 40px;
     max-width: 900px;
     margin: 0 auto;
+}
+.rules_list {
+    margin: 20px;
+    color: var(--black);
+    &__header {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    &__item {
+      margin: 20px;
+    }
 }
